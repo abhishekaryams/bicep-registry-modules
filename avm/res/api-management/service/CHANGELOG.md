@@ -2,6 +2,16 @@
 
 The latest version of the changelog can be found [here](https://github.com/Azure/bicep-registry-modules/blob/main/avm/res/api-management/service/CHANGELOG.md).
 
+## 0.14.2
+
+### Changes
+
+- Updated `hostnameConfigurations` handling to strip read-only/server-computed properties (e.g. `certificateStatus`) before deployment to avoid spurious `NotSupported` errors from the APIM resource provider during the Managed Certificates suspension window (Aug 15 2025 – Jun 30 2026).
+
+### Breaking Changes
+
+- None
+
 ## 0.14.1
 
 ### Changes
